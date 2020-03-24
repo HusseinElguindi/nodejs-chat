@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+#header {
+    position: absolute;
+    top: 0;
+    
+    background-color: rgb(36, 36, 36);
+    width: 100%;
+    height: 80px;
+}
+
+#header p{
+    font-size: 20pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+
+    padding: 0;
+    /* margin: 0; */
+    text-align: center;
+}
+
+
+
+
+
+#messageList {
+    width: 100%;
+
+    margin: 0;
+    margin-top: calc(15px + 80px);
+    margin-bottom: 10px;
+    padding: 0;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+}
+
+#messageList table {
+    margin: 0 5px;
+}
+
+#messageList li {
+    padding: 0;
+    margin: 0;
+
+    /* overflow: auto; */
+}
+
+/* 
+.overflow {
+    overflow: auto;
+} */
+
+
+
+#messageList .name {
+    max-width: 70%;
+    vertical-align: top;
+    padding: 0 5px;
+}
+
+#messageList .name div {
+    /* background-color: red; */
+
+    padding: 4px 5px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+#messageList .name p {
+    padding: 0;
+    margin: 0;
+
+    font-size: 10pt;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+#messageList .message p {
+    /* padding: 0px px; */
+    margin: 0;
+
+    font-size: 10pt;
+    color: rgb(36, 36, 36);
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+
+    word-wrap: break-word;
+    word-break: normal;
+    
+}
+
+#messageList .rightMessage {
+    position: absolute;
+    right: 0px;
+}
+
+
+
+
+#inputWrapper {
+    position: absolute;
+    bottom: 0;
+
+    height: 60px;
+    width: 100%;
+    background-color: white;
+
+    border-top: 1px solid rgb(220, 220, 220);
+
+    /* box-shadow: 0px 7px 40px rgba(0, 0, 0, 0.2); */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputWrapper input {
+    width: 70%;
+    padding: 7px 12px;
+    margin: 0;
+    outline: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: rgb(36, 36, 36);
+    border: 0;
+    background-color: rgb(240, 240, 240);
+
+    /* border-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#inputWrapper button {
+    padding: 7px 12px;
+    margin: 0;
+    margin-left: 3px;
+    outline: none;
+    cursor: pointer;
+
+    border: 0;
+
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* background-color: ; */
+}
+
+#inputWrapper button p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: rgb(36, 36, 36);
+
+    padding: 0px;
+    margin: 0;
+}
+
+
+
+
+#setup {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#setup div:nth-child(1) {
+    /* background-color: rgb(36, 36, 36); */
+
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+    width: 60%;
+    height: 250px;
+}
+
+#setup div div {
+    width: 80%;
+    
+
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#setup input {
+    width: calc(100% - 20px);
+    padding: 7px 10px;
+    margin: 0;
+    margin-bottom: 2px;
+    outline: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: rgb(36, 36, 36);
+    border: 0;
+    background-color: rgb(240, 240, 240);
+
+    /* border-radius: 10px; */
+    /* border-radius: 10px; */
+}
+
+#setup button {
+    padding: 7px 0px;
+    width: 100%;
+    margin: 0;
+    outline: none;
+
+    border: 0;
+    background-color: rgb(240, 240, 240);
+/* 
+    float: right;
+    right: 0; */
+
+    /* border-radius: 10px; */
+    /* border-radius: 10px; */
+}
+
+#setup button p {
+    padding: 0;
+    margin: 0;
+    outline: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: rgb(36, 36, 36);
+}
