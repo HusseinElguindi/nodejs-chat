@@ -23,21 +23,37 @@ wss.on('connection', function connection(ws) {
         }
         else if (obj.type == "command") {
             if (obj.data == "./connections") {
+
                 let obj = {
                     type: "message",
-                    name: "server",
+                    usr: {
+                        name: "Server",
+                        id: -1,
+                        color: "rgb(0, 0, 0)"
+                    },
                     data: `There are ${clients.length} connections.`
                 };
 
                 ws.send(JSON.stringify(obj));
             }
         }
-
     });
 
     ws.on('close', function close(reasonCode, description) {
         clients.splice(clients.indexOf(ws), 1);
-        console.log(clients.length);
+        // console.log(clients.length);
+
+        let obj = {
+            type: "message",
+            usr: {
+                name: "Server",
+                id: -1,
+                color: "rgb(0, 0, 0)"
+            },
+            data: "User left."
+        };
+
+        ws.send(JSON.stringify(obj));
     });
 
 });
